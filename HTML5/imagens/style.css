@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+    background-color: lightgrey;
+    padding: 10px;
+    text-align: justify;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-indent: 30px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscrição</title>
+</head>
+<body>
+    <h1>Formulario de Inscrição</h1>
+    <form action="#" method="post">
+
+        <div>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+        </div>
+        <br><br><br>
+
+        <div>
+            <label for="email">E-mail:</label>
+            <Input type="email" id="email"></Input>
+        </div>
+        <br><br><br>
+
+        <div>
+            <label for="whatsapp">WhatsApp:</label>
+            <input type="tel" id="whatsapp">
+        </div>
+        <br><br><br>
+
+        <div>
+            <label>Área de atuação:</label><br>
+            <input type="radio" id="desenvolvimento" name="areadeatuaçao" value="Desenvolvimento">
+            <label for="desenvolvimento">Desenvolvimento</label>
+            
+            <input type="radio" id="qualityassurance" name="areadeatuaçao" value="qualityassurance">
+            <label for="qualityassurance">Quality Assurance (QA)</label>
+            <input type="radio" id="analisededados" name="areadeatuaçao"  value="analisededados">
+            <label for="analisededados">Anãlise de Dados</label>
+            <input type="radio" id="infraestrutura" name="areadeatuaçao" value="infraestrutura">
+            <label for="infraestrutura">Infraestrutura</label>
+        </div>
+        <br><br><br>
+
+        <div>
+            <label for="observaçoes">Observações:</label><br>
+            <textarea name="observaçoes" id="observaçoes"></textarea>
+        </div>
+        <br><br><br>
+
+        <div>
+            <input type="checkbox" id="desejoreceber" name="desejoreceber" value="desejoreceber">
+            <label for="">Desejo receber novidades e ofertas por email.</label>
+        </div>
+        <br><br>
+        <button type="submit">Enviar</button>
+        <!--<input type="submit" value="Enviar" />-->
+    </form>
+</body>
+</html>
