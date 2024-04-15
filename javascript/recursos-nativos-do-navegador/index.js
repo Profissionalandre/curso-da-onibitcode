@@ -9,3 +9,7 @@ console.warn(nome)
 let confirmacao = window.confirm("Confirma essa ação?")
 
 console.log(confirmacao)
+
+const name = window.prompt("Qual o seu nome?")
+
+document.write(name)
