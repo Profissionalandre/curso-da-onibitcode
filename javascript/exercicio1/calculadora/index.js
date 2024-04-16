@@ -11,6 +11,7 @@ const multiplicar = x * y
 const dividir = x / y
 // Resultado aparecendo na tela do usuário
 alert(
+    "Resultados:\n " +
     "\nA soma é: " + somar +
     "\nA subtração é: " + subtrair +
     "\nA multiplicação é: " + multiplicar +
