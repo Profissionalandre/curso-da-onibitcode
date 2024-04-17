@@ -2,7 +2,7 @@ const personagem1 = prompt("Digite o nome de um personagem:")
 const poderDeAtaque = parseFloat(prompt("Qual seu poder de ataque?"))
 
 const personagem2 = prompt("Digite o nome de outro personagem:")
-const life = parseFloat(prompt("Quantos pontos de vida?"))
+let life = parseFloat(prompt("Quantos pontos de vida?")) // usa a variavel let por causa que o valor irá se modificar durante a operação
 const defense = parseFloat(prompt("Qual seu poder de defesa?"))
 const shield = prompt("Ele possui escudo? (Sim/Não)")
 
@@ -15,7 +15,7 @@ if (poderDeAtaque > defense && shield === "Não") {
     danoCausado = (poderDeAtaque - defense) /2 
 } 
 
-life -= danoCausado
+life -= danoCausado // usa a variavel let por causa que o valor irá se modificar durante a operação
 
 alert(personagem1 + " causou " + danoCausado + " pontos de dano em " + defense)
 alert(

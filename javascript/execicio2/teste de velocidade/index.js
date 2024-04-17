@@ -13,9 +13,9 @@ if (velocidade1 > velocidade2) {
     alert(veiculo1 + " e " + veiculo2 + " " + "tem a mesma velocidade.")
 }*/
 
-
 const veiculo1 = prompt("Informe o nome do veiculo 1:")
 const velocidade1 = parseFloat(prompt("Informe a velocidade do veiculo 1:"))
+
 const veiculo2 = prompt("Informe o nome do veiculo 2:")
 const velocidade2 = parseFloat(prompt("Informe a velocidade do veiculo 2:"))
 
