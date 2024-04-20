@@ -17,7 +17,7 @@ switch (total) {
     dinheirodisponivel -= prompt("Informe o valor a ser removido:")
     break
   case "3":
-    alert("Valor final da operação ficou: " + dinheirodisponivel + "\n" + 
+    alert("Você ficou com: " + "R$ " + dinheirodisponivel + "\n" + 
     "Obrigado por utlizar nossos serviços!"
 )
     break

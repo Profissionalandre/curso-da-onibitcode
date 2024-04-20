@@ -12,20 +12,19 @@ do {
     )
 switch (option) {
     case "1":
-        alert("Opção 1 foi escolhida!")
+        alert("Opção Iniciar foi escolhida!")
         break
     case "2":
-        alert("Opção 2 foi escolhida!")
+        alert("Opção Notícias foi escolhida!")
         break
     case "3":
-        break
-        alert("Opção 3 foi escolhida!")
+        alert("Opção Galeria de Fotos foi escolhida!")
         break
     case "4":
-        alert("Opção 4 foi escolhida!")
+        alert("Opção História foi escolhida!")
         break
     case "5":
-        alert("Opção 5 foi escolhida! Encerrando o programa...")
+        alert("Opção Encerrar foi escolhida!\n Encerrando o programa...")
         break
     default:
         alert("Opção inválida. Escolha uma das cinco opções.")
