@@ -1,19 +1,21 @@
 /* Fila de Espera
 Escreva um programa em javascript para simular uma fila de espera em um consultório médico. O programa deve iniciar mostrando na tela um menu interativo contendo a lista de todos os pacientes esperando em ordem mostrando sua posição ao lado do nome (ex.: 1º Matheus, 2º Marcos, etc). O menu também deve permitir escolher entre as opções de “Novo paciente”, para adicionar um novo paciente ao fim da fila (pedindo o nome do paciente), “Consultar paciente”, que retira o primeiro paciente da fila e mostra na tela o nome do paciente consultado, e “Sair”. O programa só deve ser encerrado ao escolher a opção de “Sair”, caso contrário deve voltar ao menu. */
 
-
+// No script, podemos já adicionar o array da fila, a variável de opção e o laço do while para manter o menu em execução:
 let fila = []
 let opcao = ""
+// Dentro do do while vamos começar montando a lista de pacientes em uma variável de texto:
 do {
     let pacientes = ""
   for (let i = 0; i < fila.length; i++) {
     pacientes += (i + 1) + "º - " + fila[i] + "\n"
   }
-
+// Depois podemos adicionar o prompt que irá mostrar a fila de espera e as opções do menu:
   opcao = prompt(
     "Pacientes:\n" + pacientes +
     "\nEscolha uma ação:\n1 - Novo paciente\n2 - Consultar paciente\n3 - Sair"
   )
+// Para encerrar, adicionaremos o switch contendo cada uma das opções:
     switch (opcao) {
         case "1":
           const novoPaciente = prompt("Qual é o nome do paciente?")
