@@ -1,12 +1,16 @@
-alert("Sistema integrado da nave apollo 1!")
+alert("Sistema integrado da nave Apollo 1!")
 
-const nome = prompt("Informe o nome do piloto: ")
-let estatico = 0
-let velocidade = prompt("A qual velocidade gostaria que a nave estivesse? ")
+const nome = prompt("Informe seu nome do piloto: ")
+let velocidade = 0
+let novavelocidade = prompt("A qual velocidade gostaria que a nave estivesse? ")
 
-let confimacao = confirm("Deseja realmente que a nave esteja nesta velocidade? ")
+let confimacao = confirm("Deseja realmente que a nave esteja há " + velocidade + " km/h? ")
 
-if (velocidade  < 0) {
+if (confimacao) {
+    velocidade = novavelocidade
+}
+
+if (velocidade <= 0) {
     alert("Nave está parada! Considere partir e aumentar sua velocidade.")
 }else if (velocidade < 40) {
     alert("Você está devagar! Podemos aumentar mais a velocidade.")
@@ -18,4 +22,7 @@ if (velocidade  < 0) {
     alert("Velocidade perigosa! Contrle automático forçado.")
 }
 
-alert("A nave do piloto " + nome + ", está há uma velocidade de " + velocidade + " Km/h")
+alert(
+    "A nave do piloto " + nome + ", está há uma velocidade de " + velocidade + " Km/h" + 
+    "\nObrigado por viajar na Apollo 1"
+)
