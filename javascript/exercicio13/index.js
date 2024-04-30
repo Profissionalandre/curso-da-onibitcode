@@ -48,7 +48,10 @@ function novaVaga() {
 // Vamos criar também uma função para exibir uma vaga:
 function exibirVaga() {
   const indice = prompt("Informe o índice da vaga que deseja exibir:")
-  const vaga = vagas[indice]
+  if (indice >= vagas.length || indice < 0) {
+    alert ("Vaga não encontrada")
+    return
+  }
 
   const candidatosEmTexto = vaga.candidatos.reduce((textoFinal, candidato) => textoFinal + "\n - " + candidato, "")
 
